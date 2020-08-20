@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3b5998">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabbanda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Banda"
+            android:icon="@drawable/banda"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabelectro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valvulas"
+            android:icon="@drawable/electrovalvulas"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabalma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Almacen"
+            android:icon="@drawable/almacenameinto"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+</LinearLayout>
